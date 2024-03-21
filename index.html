@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Magnification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome Back</h1>
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider" id="carousel">
+                <img src="img/cr1.jpg" alt="carosoul Image 1" class="cr" id="slide-1">
+                <img src="img/cr2.jpeg" alt="carosoul Image 2" class="cr" id="slide-2">
+                <img src="img/cr7.jpg" alt="carosoul Image 3" class="cr" id="slide-3">
+                <img src="img/cr3.jpg" alt="carosoul Image 4" class="cr" id="slide-4">
+            </div>
+        </div>
+    </section>
+    <h1>Image Gallery</h1>
+    <section class="midsec">
+        <div class="midx">
+            <img src="img/2nd.jpg" alt="img-2" id="hovimg-2 "onclick="enlargeImage(this)">
+        </div>
+        <div class="midx">
+            <img src="img/3rd.jpeg" alt="img-3" id="hovimg-3 " onclick="enlargeImage(this)">
+        </div>
+        <div class="midx">
+            <img src="img/4th.jpeg" alt="img-4" id="hovimg-4" onclick="enlargeImage(this)">
+        </div>
+        <div class="midx">
+            <img src="img/5th.jpg" alt="img-5" id="hovimg-5" onclick="enlargeImage(this)">
+        </div>
+        <div class="midx">
+            <img src="img/6th.jpg" alt="img-6" id="hovimg-6 " onclick="enlargeImage(this)">
+        </div>
+        <div class="midx">
+            <img src="img/7th.jpg" alt="img-7" id="hovimg-7 "onclick="enlargeImage(this)">
+        </div>
+        <div class="midx">
+            <img src="img/8th.jpg" alt="img-8" id="hovimg-8 "onclick="enlargeImage(this)">
+        </div>
+        <div class="midx">
+            <img src="img/9th.jpg" alt="img-9" id="hovimg-9 "onclick="enlargeImage(this)">
+        </div>
+        
+
+    </section>
+    <div class="popup-container" id="popup-container">
+        <img class="popup-img" id="popup-img" src="" alt="Enlarged Image">
+        <span onclick="closePopup()" id="spx"><img width="48" height="48" src="https://img.icons8.com/fluency/48/cancel.png" alt="cancel"/></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
